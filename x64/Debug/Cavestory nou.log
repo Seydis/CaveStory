@@ -1,0 +1,23 @@
+﻿  stdafx.cpp
+  sprite.cpp
+  main.cpp
+  input.cpp
+  graphics.cpp
+  game.cpp
+e:\serious stuff\proiecte visual studio\cavestory nou\game.cpp(62): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+  Generating Code...
+game.obj : error LNK2019: unresolved external symbol SDL_PollEvent referenced in function "private: void __cdecl Game::gameLoop(void)" (?gameLoop@Game@@AEAAXXZ)
+game.obj : error LNK2019: unresolved external symbol SDL_GetTicks referenced in function "private: void __cdecl Game::gameLoop(void)" (?gameLoop@Game@@AEAAXXZ)
+game.obj : error LNK2019: unresolved external symbol SDL_Init referenced in function "public: __cdecl Game::Game(void)" (??0Game@@QEAA@XZ)
+graphics.obj : error LNK2019: unresolved external symbol SDL_SetWindowTitle referenced in function "public: __cdecl Graphics::Graphics(void)" (??0Graphics@@QEAA@XZ)
+graphics.obj : error LNK2019: unresolved external symbol SDL_DestroyWindow referenced in function "public: __cdecl Graphics::~Graphics(void)" (??1Graphics@@QEAA@XZ)
+graphics.obj : error LNK2019: unresolved external symbol SDL_CreateWindowAndRenderer referenced in function "public: __cdecl Graphics::Graphics(void)" (??0Graphics@@QEAA@XZ)
+graphics.obj : error LNK2019: unresolved external symbol SDL_RenderClear referenced in function "public: void __cdecl Graphics::clear(void)" (?clear@Graphics@@QEAAXXZ)
+graphics.obj : error LNK2019: unresolved external symbol SDL_RenderCopy referenced in function "public: void __cdecl Graphics::blitSurface(struct SDL_Texture *,struct SDL_Rect *,struct SDL_Rect *)" (?blitSurface@Graphics@@QEAAXPEAUSDL_Texture@@PEAUSDL_Rect@@1@Z)
+graphics.obj : error LNK2019: unresolved external symbol SDL_RenderPresent referenced in function "public: void __cdecl Graphics::flip(void)" (?flip@Graphics@@QEAAXXZ)
+sprite.obj : error LNK2019: unresolved external symbol SDL_GetError referenced in function "public: __cdecl Sprite::Sprite(class Graphics &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int,int,int,int,float,float)" (??0Sprite@@QEAA@AEAVGraphics@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HHHHMM@Z)
+sprite.obj : error LNK2019: unresolved external symbol SDL_CreateTextureFromSurface referenced in function "public: __cdecl Sprite::Sprite(class Graphics &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int,int,int,int,float,float)" (??0Sprite@@QEAA@AEAVGraphics@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HHHHMM@Z)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+E:\Serious Stuff\SDL2\lib\SDL2main.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+E:\Serious Stuff\SDL2\lib\SDL2.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+E:\Serious Stuff\Proiecte Visual Studio\Cavestory nou\x64\Debug\Cavestory nou.exe : fatal error LNK1120: 12 unresolved externals

@@ -1,0 +1,4 @@
+﻿  game.cpp
+e:\serious stuff\proiecte visual studio\cavestory nou\game.cpp(62): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+  Cavestory nou.vcxproj -> E:\Serious Stuff\Proiecte Visual Studio\Cavestory nou\Debug\Cavestory nou.exe
+  Cavestory nou.vcxproj -> E:\Serious Stuff\Proiecte Visual Studio\Cavestory nou\Debug\Cavestory nou.pdb (Full PDB)
