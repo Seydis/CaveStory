@@ -27,11 +27,6 @@ public:
 		deseneaza sprite-ul pe ecran
 	*/
 	void draw(Graphics &graphics, int x, int y);
-	
-	/* void setupAnimations
-	   functie necesara care seteaza animatiile dintr-un sprite 
-	*/
-	virtual void setupAnimations();
 
 protected:
 	double _timeToUpdate;
@@ -59,7 +54,12 @@ protected:
 	/* void animationDone
 		contine ce se intampla la sfarsitul unei anume animatii
 	*/
-	virtual void animationDone(std::string currentAnimation);
+	virtual void animationDone(std::string currentAnimation) = 0;
+
+	/* void setupAnimations
+	functie necesara care seteaza animatiile dintr-un sprite
+	*/
+	virtual void setupAnimations() = 0;
 private:
 	//fiecare vector de SDL_Rect contine partea din sprite necesara pt animatia in cauza
 	std::map<std::string, std::vector<SDL_Rect> > _animations;

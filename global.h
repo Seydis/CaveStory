@@ -17,3 +17,7 @@ struct Vector2 {
 		return Vector2(0, 0);
 	}
 };
+
+enum Direction {
+	LEFT, RIGHT, UP, DOWN
+};
