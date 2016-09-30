@@ -39,6 +39,9 @@
     <ClCompile Include="player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h">
@@ -68,9 +71,15 @@
     <ClInclude Include="player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Content\Sprites\MyChar.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Content\Backgrounds\bkBlue.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

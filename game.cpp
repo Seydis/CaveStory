@@ -31,7 +31,7 @@ void Game::gameLoop() {
 	SDL_Event event;
 
 	this->_player = Player(graphics, 100, 100);
-
+	this->_level = Level("map1", Vector2(100,100), graphics);
 	int LAST_UPDATE_TIME = SDL_GetTicks();
 
 	// start loop
@@ -63,7 +63,7 @@ void Game::gameLoop() {
 
 
 		const int CURRENT_TIME_MS = SDL_GetTicks();
-		//atat i-a luat frame-ului curent
+		//masoara frameul curent
 		int ELAPSED_TIME_MS = CURRENT_TIME_MS - LAST_UPDATE_TIME;
 		this->update(std::min(ELAPSED_TIME_MS, MAX_FRAME_TIME));
 		LAST_UPDATE_TIME = CURRENT_TIME_MS;
@@ -75,7 +75,9 @@ void Game::gameLoop() {
 void Game::draw(Graphics &graphics) {
 	graphics.clear();
 
+	this->_level.draw(graphics);
 	this->_player.draw(graphics);
+	
 	graphics.flip();
 }
 

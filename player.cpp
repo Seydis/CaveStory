@@ -40,7 +40,7 @@ void Player::stopMoving() {
 	this->playAnimation(this->_facing == RIGHT ? "IdleRight" : "IdleLeft");
 }
 void Player::update(float elapsedTime) {
-	this->_x += this->_dx * elapsedTime;
+	 this->_x += this->_dx * elapsedTime;
 
 	AnimatedSprite::update(elapsedTime);
 }

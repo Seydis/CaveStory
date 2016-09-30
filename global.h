@@ -1,5 +1,7 @@
 #pragma once
 
+/* Contine constante globale si structuri de date custom
+*/
 namespace global {
 	const int SCREEN_WIDTH = 640;
 	const int SCREEEN_HEIGHT = 480;

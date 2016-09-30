@@ -4,7 +4,7 @@
 #include "graphics.h"
 
 /* AnimatedSprite class
-   face ca sprite-urile sa se poata mmisca
+   face ca sprite-urile sa se poata misca
 */
 
 AnimatedSprite::AnimatedSprite() {}

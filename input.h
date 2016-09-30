@@ -11,7 +11,7 @@ public:
 	//functie apelata la inceputul fiecarui frame
 	//pt a reseta starea tastaturii
 	void beginNewFrame();
-	//functie care se apeleaza cand nu se mai apasa pe o tasta
+	//functie care se apeleaza atunci cand nu se opreste apasarea unei taste
 	void keyUpEvent(const SDL_Event& event);
 	//functie apelata atunci cand se apasa o tasta
 	void keyDownEvent(const SDL_Event& event);
