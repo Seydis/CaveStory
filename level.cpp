@@ -36,10 +36,10 @@ void Level::draw(Graphics &graphics) {
 	// loop pt repetarea .png care constituie background
 	for (int x = 0; x < this->_size.x / 64; x++) {
 		for (int y = 0; y < this->_size.y / 64; y++) {
-			destRect.x = x * 64;
-			destRect.y = y * 64;
-			destRect.w = 64;
-			destRect.h = 64;
+			destRect.x = x * 64 * global::SPRITE_RATIO;
+			destRect.y = y * 64 * global::SPRITE_RATIO;
+			destRect.w = 64 * global::SPRITE_RATIO;
+			destRect.h = 64 * global::SPRITE_RATIO;
 			graphics.blitSurface(this->_backgroundTexture, &sourceRect, &destRect);
 		}
 			
