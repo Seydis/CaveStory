@@ -164,6 +164,7 @@
     <ClCompile Include="player.cpp" />
     <ClCompile Include="sprite.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="tile.cpp" />
     <ClCompile Include="tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -177,11 +178,16 @@
     <ClInclude Include="sprite.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="tile.h" />
     <ClInclude Include="tinyxml2.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Content\Backgrounds\bkBlue.png" />
     <Image Include="Content\Sprites\MyChar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Maps\Map 1.tmx" />
+    <None Include="Content\Maps\map1.tmx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

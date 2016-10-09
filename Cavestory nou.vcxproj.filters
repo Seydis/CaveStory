@@ -45,6 +45,9 @@
     <ClCompile Include="tinyxml2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="tile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h">
@@ -80,6 +83,9 @@
     <ClInclude Include="tinyxml2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="tile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Content\Sprites\MyChar.png">
@@ -88,5 +94,13 @@
     <Image Include="Content\Backgrounds\bkBlue.png">
       <Filter>Resource Files</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Maps\Map 1.tmx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Content\Maps\map1.tmx">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

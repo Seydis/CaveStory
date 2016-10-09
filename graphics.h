@@ -6,6 +6,7 @@ struct SDL_Window;
 struct SDL_Renderer;
 struct SDL_Surface;
 struct SDL_Texture;
+struct SDL_Rect;
 // forward declaring, pt a nu include sdl in header
 
 /*

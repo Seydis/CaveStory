@@ -1,7 +1,6 @@
 ﻿  level.cpp
-e:\serious stuff\proiecte visual studio\cavestory nou\level.cpp(39): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-e:\serious stuff\proiecte visual studio\cavestory nou\level.cpp(40): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-e:\serious stuff\proiecte visual studio\cavestory nou\level.cpp(41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-e:\serious stuff\proiecte visual studio\cavestory nou\level.cpp(42): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+e:\serious stuff\proiecte visual studio\cavestory nou\level.cpp(105): warning C4018: '<': signed/unsigned mismatch
+e:\serious stuff\proiecte visual studio\cavestory nou\level.cpp(64): warning C4101: 'path': unreferenced local variable
+e:\serious stuff\proiecte visual studio\cavestory nou\level.cpp(182): warning C4018: '<': signed/unsigned mismatch
   Cavestory nou.vcxproj -> E:\Serious Stuff\Proiecte Visual Studio\Cavestory nou\Debug\Cavestory nou.exe
   Cavestory nou.vcxproj -> E:\Serious Stuff\Proiecte Visual Studio\Cavestory nou\Debug\Cavestory nou.pdb (Full PDB)

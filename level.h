@@ -1,10 +1,15 @@
 #pragma once
 
 #include <string>
+#include <vector>
 #include "global.h"
+#include "tile.h"
 
-class Graphics;
+
 struct SDL_Texture;
+struct SDL_Rect;
+struct Tileset;
+class Graphics;
 
 class Level {
 public:
@@ -21,11 +26,31 @@ private:
 
 	//contine inaltime si latime pt toata harta, in pixeli
 	Vector2 _size;
+	Vector2 _tileSize;
 
 	SDL_Texture* _backgroundTexture;
+
+	std::vector<Tile> _tileList;
+	std::vector<Tileset> _tilesets;
 	
 	/*void loadMap
 	incarca harta in memorie
 	*/
 	void loadMap(std::string mapName, Graphics &graphics);
+};
+
+struct Tileset {
+	//toata imaginea tileset-ului
+	SDL_Texture* Texture;
+	//primul gid din tileset
+	int firstGid;
+
+	Tileset() {
+		this->firstGid = -1;
+	}
+
+	Tileset(SDL_Texture* texture, int firstGid) {
+		this->Texture = texture;
+		this->firstGid = firstGid;
+	}
 };
