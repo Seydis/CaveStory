@@ -3,12 +3,20 @@
 
 namespace playerConstants {
 	const float WALKSPEED = 0.2F;
+
+	const float GRAVITY = 0.002F;
+	const float GRAVITYCAP = 0.8F;
 }
 
 Player::Player () {}
 
 Player::Player(Graphics &graphics, float x, float y) :
-	AnimatedSprite(graphics, "content/sprites/MyChar.png", 0, 0, 16, 16, x, y, 100) {
+	AnimatedSprite(graphics, "content/sprites/MyChar.png", 0, 0, 16, 16, x, y, 100),
+	_dx(0),
+	_dy(0),
+	_facing(RIGHT),
+	_grounded(false)
+{
 	graphics.loadImage("Content/Sprites/MyChar.png");
 	this->setupAnimations();
 	this->playAnimation("RunRight");
@@ -22,6 +30,14 @@ void Player::setupAnimations() {
 	}
 
 void Player::animationDone(std::string currentAnimation) {}
+
+const float Player::getX() const {
+	return this->_x;
+}
+
+const float Player::getY() const {
+	return this->_y;
+}
 
 void Player::moveLeft() {
 	this->_dx = -playerConstants::WALKSPEED;
@@ -40,7 +56,17 @@ void Player::stopMoving() {
 	this->playAnimation(this->_facing == RIGHT ? "IdleRight" : "IdleLeft");
 }
 void Player::update(float elapsedTime) {
+	//Gravitatie !
+
+	if (this->_dy <= playerConstants::GRAVITYCAP) {
+		this->_dy += playerConstants::GRAVITY * elapsedTime;
+	}
+
+	//Personajul se muta cu dx
 	 this->_x += this->_dx * elapsedTime;
+
+	 //Personajul se muta cu dy
+	 this->_y += this->_dy * elapsedTime;
 
 	AnimatedSprite::update(elapsedTime);
 }

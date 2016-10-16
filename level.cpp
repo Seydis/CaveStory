@@ -186,3 +186,15 @@ void Level::draw(Graphics &graphics) {
 	for (int i = 0; i < this->_tileList.size(); i++)
 		this->_tileList.at(i).draw(graphics);
 }
+
+std::vector<Rectangle> Level::checkTileCollision(const Rectangle &other) {
+	std::vector<Rectangle> others;
+
+	for (int i = 0; i < this->_collisionRects.size(); i++) {
+		if (this->_collisionRects.at(i).collidesWith(other)) {
+			others.push_back(this->_collisionRects.at(i));
+		}
+	}
+
+	return others;
+}

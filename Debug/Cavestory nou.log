@@ -1,6 +1,27 @@
-﻿  level.cpp
+﻿  animatedSprite.cpp
+e:\serious stuff\proiecte visual studio\cavestory nou\animatedsprite.cpp(58): warning C4018: '<': signed/unsigned mismatch
+e:\serious stuff\proiecte visual studio\cavestory nou\animatedsprite.cpp(77): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+e:\serious stuff\proiecte visual studio\cavestory nou\animatedsprite.cpp(78): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
+  Compiling...
+  tile.cpp
+e:\serious stuff\proiecte visual studio\cavestory nou\tile.cpp(11): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\serious stuff\proiecte visual studio\cavestory nou\tile.cpp(17): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+e:\serious stuff\proiecte visual studio\cavestory nou\tile.cpp(17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  sprite.cpp
+e:\serious stuff\proiecte visual studio\cavestory nou\sprite.cpp(28): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+e:\serious stuff\proiecte visual studio\cavestory nou\sprite.cpp(28): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  player.cpp
+e:\serious stuff\proiecte visual studio\cavestory nou\player.cpp(71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\serious stuff\proiecte visual studio\cavestory nou\player.cpp(75): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  main.cpp
+  level.cpp
 e:\serious stuff\proiecte visual studio\cavestory nou\level.cpp(108): warning C4018: '<': signed/unsigned mismatch
 e:\serious stuff\proiecte visual studio\cavestory nou\level.cpp(66): warning C4101: 'path': unreferenced local variable
 e:\serious stuff\proiecte visual studio\cavestory nou\level.cpp(186): warning C4018: '<': signed/unsigned mismatch
+  graphics.cpp
+  game.cpp
+e:\serious stuff\proiecte visual studio\cavestory nou\game.cpp(68): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+  Generating Code...
   Cavestory nou.vcxproj -> E:\Serious Stuff\Proiecte Visual Studio\Cavestory nou\Debug\Cavestory nou.exe
   Cavestory nou.vcxproj -> E:\Serious Stuff\Proiecte Visual Studio\Cavestory nou\Debug\Cavestory nou.pdb (Full PDB)
