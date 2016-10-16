@@ -11,6 +11,8 @@
 #include <sstream>
 #include <cmath>
 
+#include <iostream>
+
 using namespace tinyxml2;
 
 Level::Level() {}
@@ -75,6 +77,7 @@ void Level::loadMap(std::string mapName, Graphics &graphics) {
 
 	// Parsam layerele din .tmx, conform cu ce am facut in Tiles
 	XMLElement* pLayer = mapNode->FirstChildElement("layer");
+
 	if (pLayer != NULL) {
 		while (pLayer) {
 			//Parsam data
@@ -153,9 +156,10 @@ void Level::loadMap(std::string mapName, Graphics &graphics) {
 				}
 			}
 
-			pLayer = pLayer->NextSiblingElement("Layer");
+			pLayer = pLayer->NextSiblingElement("layer");
 		}
 	}
+
 }
 
 void Level::update(int elapsedTime) {
