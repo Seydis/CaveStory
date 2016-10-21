@@ -23,6 +23,8 @@ public:
 
 	std::vector<Rectangle> checkTileCollision(const Rectangle &other);
 
+	const Vector2 getPlayerSpawnPoint() const;
+
 private:
 	std::string _mapName;
 	Vector2 _spawnPoint;

@@ -4,7 +4,7 @@
 
 class Rectangle {
 public:
-	Rectangle();
+	Rectangle() {};
 
 	Rectangle(int x, int y, int width, int height) :
 		_x(x),
@@ -26,6 +26,11 @@ public:
 	const int getTop() const { return this->_y; }
 	//Returneaza pozitia Y din stanga jos
 	const int getBottom() const { return this->_y + this->_height; }
+
+	//Returneaza height
+	const int getHeight() const { return this->_height; }
+	//Retunreaza width
+	const int getWidth() const { return this->_width; }
 
 	const int getSide(const sides::Side side) const {
 		return

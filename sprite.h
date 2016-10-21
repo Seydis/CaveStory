@@ -1,7 +1,11 @@
 #pragma once
 
 #include <SDL_image.h>
+
 #include <string>
+
+#include "rectangle.h"
+#include "global.h"
 
 class Graphics;
 
@@ -19,10 +23,15 @@ public:
 
 	void draw(Graphics &graphics, int x, int y);
 
+	const Rectangle getBoundingBox() const;
+	const sides::Side getCollisionSide(Rectangle &other) const;
+
 protected:
 	SDL_Rect _sourceRect;
 	SDL_Texture* _spriteSheet;
 	float _x, _y;
+
+	Rectangle _boundingBox;
 
 private:
 	

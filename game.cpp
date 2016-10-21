@@ -30,8 +30,9 @@ void Game::gameLoop() {
 	Input input;
 	SDL_Event event;
 
-	this->_player = Player(graphics, 100, 100);
-	this->_level = Level("Map 1", Vector2(100,100), graphics);
+	this->_level = Level("Map 1", Vector2(100, 100), graphics);
+	this->_player = Player(graphics, this->_level.getPlayerSpawnPoint());
+	
 	int LAST_UPDATE_TIME = SDL_GetTicks();
 
 	// start loop
@@ -83,4 +84,12 @@ void Game::draw(Graphics &graphics) {
 
 void Game::update(float elapsedTime) {
 	this->_player.update(elapsedTime);
+	this->_level.update(elapsedTime);
+
+	//Verificam coliziunile
+	std::vector<Rectangle> others;
+	if ((others = this->_level.checkTileCollision(this->_player.getBoundingBox())).size() > 0) {
+		//Player a atins macar un tile
+		this->_player.handleTileCollisions(others);
+	}
 }
